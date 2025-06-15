@@ -4,76 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akuba Goodness - Backend Developer Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    /* Artistic styles */
-    .hero { background-image: url(aiimage.jpg); width: 100%; height: 50vh; background-size: cover; background-position: center; }
-    .hero-text { color: #fff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
-    .hero-text { font-family: 'Poppins', sans-serif; }
-    .project-card:hover { transform: scale(1.05); transition: transform 0.3s; }
-    .neon-button { box-shadow: 0 0 10px #0ea5e9; }
-    .neon-button:hover { box-shadow: 0 0 20px #0ea5e9; }
-    body.dark .hero { background-image: url(aiimage-dark.jpg); }
-    .p-text {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.125rem; /* 18px */
-      line-height: 1.75; /* 28px */
-      color: #fff;
-    }
-  </style>
+  <link href="myportfolio.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white">
+<body>
   <!-- Hero Section -->
-  <header class="hero min-h-screen flex items-center justify-center text-center">
-    <div>
-      <h1 class="hero-text text-5xl font-bold">Hi, I’m Akuba Goodness</h1>
-      <p class="text-xl mt-4" style="color: white;">Backend Developer | Node.js, Express, MongoDB</p>
-      <div class="mt-6">
-        <a href="#projects" class="bg-blue-500 text-white px-6 py-3 rounded neon-button">View Projects</a>
-        <a href="#contact" class="bg-transparent border border-blue-500 text-blue-500 px-6 py-3 rounded ml-4">Contact Me</a>
+  <header>
+    <div class="hero-section">
+      <h1>Hi, I’m Akuba Goodness</h1>
+      <p>Backend Developer | Node.js, Express, MongoDB</p>
+      <div>
+        <a href="#projects">View Projects</a>
+        <a href="#contact">Contact</a>
       </div>
-      <button id="theme-toggle" class="absolute top-4 right-4">Toggle Dark Mode</button>
-    </div>
   </header>
 
   <!-- About Section -->
-  <section id="about" class="py-16 px-4">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row">
+  <section id="about">
+    <div class="flex-container">
       <img src="profile.jpg" alt="Profile" class="w-48 h-48 rounded-full mx-auto md:mx-0">
-      <div class="md:ml-8 mt-4 md:mt-0">
-        <h2 class="text-3xl font-bold">About Me</h2>
-        <p class="mt-4">Goodness a passionate backend developer with a knack for building scalable, efficient systems that power seamless user experiences. Specializing in technologies like Node.js, PostgreSQL, and cloud platforms, he craft robust APIs and data-driven solutions that bring ideas to life. With a focus on clean code and performance optimization, he thrive on solving complex problems and creating reliable infrastructure.His journey in backend development is driven by a love for problem-solving and a commitment to clean, maintainable code. Whether it’s designing a RESTful API for a portfolio or optimizing cloud-based infrastructure, he thrive on turning complex challenges into elegant solutions.  When he is not coding, you'll find him exploring new tech trends or refining his craft to deliver impactful digital experiences.</p>
-        <div class="mt-4">
-          <span class="inline-block bg-blue-200 text-blue-800 px-3 py-1 rounded">Node.js</span>
-          <span class="inline-block bg-blue-200 text-blue-800 px-3 py-1 rounded ml-2">Express</span>
-          <span class="inline-block bg-blue-200 text-blue-800 px-3 py-1 rounded ml-2">MongoDB</span>
-        </div>
+      <div class="about-section">
+        <h2>About Goodness</h2>
+        <p>Goodness is a passionate backend developer with a knack for building scalable, efficient systems that power seamless user experiences. Specializing in technologies like Node.js, PostgreSQL, and cloud platforms, he craft robust APIs and data-driven solutions that bring ideas to life. With a focus on clean code and performance optimization, he thrive on solving complex problems and creating reliable infrastructure.His journey in backend development is driven by a love for problem-solving and a commitment to clean, maintainable code. Whether it’s designing a RESTful API for a portfolio or optimizing cloud-based infrastructure, he thrive on turning complex challenges into elegant solutions.  When he is not coding, you'll find him exploring new tech trends or refining his craft to deliver impactful digital experiences.</p>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="py-16 px-4 bg-gray-200 dark:bg-gray-800">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-center">Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-        <div class="project-card bg-white dark:bg-gray-700 p-6 rounded shadow">
-          <h3 class="text-xl font-semibold">Registration API</h3>
-          <p class="mt-2">A REST API for user registration with Express, MongoDB, and JWT authentication.</p>
-          <p class="mt-2 text-sm">Tech Stack: Node.js, Express, MongoDB</p>
+  <section id="projects">
+    <div class="project-section">
+      <h2>Projects</h2>
+        <div class="project-card">
+          <h3>Registration API</h3>
+          <p>A REST API for user registration with Express, MongoDB, and JWT authentication.</p>
+          <p>Tech Stack: Node.js, Express, MongoDB</p>
           <a href="https://github.com/True-ID-com/Nin-Trueid" class="text-blue-500">GitHub</a>
-          <button onclick="window.location.href='https://github.com/True-ID-com/Nin-Trueid'" class="mt-2 text-blue-500">Live Demo</button>
+          <button onclick="window.location.href='https://github.com/True-ID-com/Nin-Trueid'">Live Demo</button>
         </div>
         <!-- Add more project cards as needed -->
       </div>
-    </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="py-16 px-4">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold">Tech Stack</h2>
-      <div class="flex flex-wrap justify-center mt-8 gap-4">
+  <section id="skills">
+    <div class="skill-section">
+      <h2>Tech Stack</h2>
+      <div class="flex flex-wrap">
         <div class="p-4">Node.js</div>
         <div class="p-4">Express.js</div>
         <div class="p-4">MongoDB</div>
@@ -82,40 +57,33 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 px-4 bg-gray-200 dark:bg-gray-800">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-center">Get in Touch</h2>
-      <form action="/api/contact" method="POST" class="max-w-lg mx-auto mt-8">
-        <input type="text" name="name" placeholder="Name" class="w-full p-3 mb-4 border rounded">
-        <input type="email" name="email" placeholder="Email" class="w-full p-3 mb-4 border rounded">
-        <textarea name="message" placeholder="Message" class="w-full p-3 mb-4 border rounded"></textarea>
-        <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded neon-button">Send</button>
+  <section id="contact">
+    <div class="contact-section">
+      <h2>Get in Touch</h2>
+      <form action="/api/contact" method="POST">
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
       </form>
-      <div class="flex justify-center mt-6 gap-4">
-        <a href="https://github.com/True-ID-com/Nin-Trueid"><img src="github.svg" alt="GitHub" class="w-8 h-8"></a>
-        <a href="https://www.linkedin.com/in/akuba-goodness-ag-64651036a/"><img src="linkedin.svg" alt="LinkedIn" class="w-8 h-8"></a>
-        <a href="https://x.com/Goodness6810494"><img src="twitter-alt.svg" alt="Twitter" class="w-8 h-8"></a>
+      <div class="flex">
+        <a href="https://github.com/True-ID-com/Nin-Trueid"><img src="github.svg" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/akuba-goodness-ag-64651036a/"><img src="linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://x.com/Goodness6810494"><img src="twitter-alt.svg" alt="Twitter"></a>
       </div>
       <button onclick="window.location.href='https://example.com'" class="mt-4 text-blue-500">Visit My Blog</button>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-6 text-center bg-gray-900 text-white">
+  <footer>
     <p>&copy; 2025 Akuba Goodness. All rights reserved.</p>
-    <div class="mt-2">
-      <a href="#hero" class="text-blue-400 mx-2">Home</a>
-      <a href="#about" class="text-blue-400 mx-2">About</a>
-      <a href="#projects" class="text-blue-400 mx-2">Projects</a>
-      <a href="#contact" class="text-blue-400 mx-2">Contact</a>
+    <div class="footer-section">
+      <a href="#hero-section">Home</a>
+      <a href="#about-section">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
   </footer>
-
-  <script>
-    // Dark mode toggle
-    document.getElementById('theme-toggle').addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-    });
-  </script>
 </body>
 </html>
