@@ -1,0 +1,213 @@
+body {
+    font-family: Garamond;
+    font-size: 30px;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+h2 {
+    font-size: 35px;
+    text-align: center;
+}
+.hero-section {
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.hero-section a {
+    background-color:black;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+.hero-section a:hover {
+    background-color: darkgray;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: whitesmoke;
+    gap: 38px;
+    border-radius: 10px;
+    border:rgba(0, 0, 0, 0.1) 1px solid;
+}
+.about-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.about-section p {
+    max-width: 600px;
+    text-align: center;
+    font-size: 20px;
+}
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: whitesmoke;
+    justify-content: center;
+}
+.project-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 24px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 40%;
+    box-sizing: border-box;
+}
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.project-card p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.project-card a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.project-card a:hover {
+    color: darkgray;
+}
+.project-card button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+.project-card button:hover {
+    background-color: darkgray;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    width: 100%;
+}
+.contact-section input,
+.contact-section textarea {
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.contact-section input:focus,
+.contact-section textarea:focus {
+    border-color: black;
+    outline: none;
+}
+.contact-section button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    width: 20%;
+}
+.contact-section button:hover {
+    background-color: darkgray;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+.flex img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+.flex img:hover {
+    transform: scale(1.1);
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+}
+.footer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+h2 {
+    font-size: 35px;
+    text-align: center;
+}
